@@ -1,0 +1,3 @@
+Case 1: different
+Case 2: same
+Case 3: different

@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		while (in.hasNextLine()){
+			int i = in.nextInt();
+			int j = in.nextInt();
+			System.out.println(i + " " + j + " " getMaxCycle(i, j));
+		}
+	}
+	
+	public void getMaxCycle(int i, int j){
+		int jCount = 0;
+		int iCount = 0;
+		while (i != 1){
+			if (i % 2 == 0){
+				i = i / 2;
+			} else {
+				i = i * 3 + 1;
+			}
+			
+			iCount++;
+			
+		}
+		
+		while (j != 1){
+			if (j != 0){
+				j = j / 2;
+			} else {
+				j = j * 3 + 1;
+			}
+			
+			jCount++;
+		}
+		
+		return jCount > iCount ? jCount : iCount;
+		
+	}
+}

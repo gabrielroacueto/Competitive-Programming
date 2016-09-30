@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+	static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		while (in.hasNextLine()){
+			int i = in.nextInt();
+			int j = in.nextInt();
+			System.out.println(i + " " + j + " " getMaxCycle(i, j));
+		}
+	}
+}
